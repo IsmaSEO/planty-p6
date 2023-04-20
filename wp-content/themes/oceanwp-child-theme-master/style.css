@@ -9,3 +9,44 @@ Version: 1.0
 */
 
 /* Parent stylesheet should be loaded from functions.php not using @import */
+
+#footer-bottom #footer-bottom-menu a {
+    color: #0000;
+}
+
+#footer-widgets {
+    background-color: #ffff;
+    padding: 30px 0;
+    margin: 0;
+}
+
+/* Header */
+#site-header-inner {
+    position: relative;
+    height: 100%;
+}
+
+/* Footer */
+#site-footer {
+    width: auto;
+    height: 60px;
+    padding-top: 10px;
+    background: #ffff;
+    text-align: center;
+    color: black;
+    font-family: sans-serif;
+    font-style: normal;
+}
+
+h3 {
+    color: #ffff;
+}
+.uacf7-form-251 {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.buttons {
+    background-color: #E0B9B4;
+}

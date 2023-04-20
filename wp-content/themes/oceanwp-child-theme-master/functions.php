@@ -31,3 +31,11 @@ function oceanwp_child_enqueue_parent_style() {
 }
 
 add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
+
+function custom_menu_item($items, $args) {
+    if (is_user_logged_in()) {
+        $items .= '<li><a href="'.admin_url().'">Admin</a></li>';
+    }
+    return $items;
+}
+add_filter('wp_nav_menu_items', 'custom_menu_item', 10, 2);
