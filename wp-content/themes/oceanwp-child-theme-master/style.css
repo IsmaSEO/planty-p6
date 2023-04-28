@@ -40,13 +40,12 @@ Version: 1.0
 
 h3 {
     color: #ffff;
-}
-.uacf7-form-251 {
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    font-family: "Syne", Sans-serif;
+    font-size: 30px;
+    font-weight: 700;
 }
 
+/* Form */
 .buttons {
     background-color: #E0B9B4;
 }
