@@ -18,9 +18,6 @@ $is_new     = (bool) Param::get( 'new' );
 $is_editing = ! empty( Param::get( 'url' ) ) || ! empty( $_GET['urls'] ) || ! empty( $_REQUEST['log'] ) || ! empty( Param::request( 'redirect_uri' ) ) || $redirections->form->is_editing();
 
 $is_importexport = ! empty( Param::get( 'importexport' ) );
-
-$entries_status = Param::get( 'status' ) ?? 'any';
-
 ?>
 <div class="wrap rank-math-redirections-wrap">
 
@@ -45,7 +42,6 @@ $entries_status = Param::get( 'status' ) ?? 'any';
 
 	<form method="get">
 		<input type="hidden" name="page" value="rank-math-redirections">
-		<input type="hidden" name="status" value="<?php echo esc_attr( $entries_status ); ?>">
 		<?php $redirections->table->search_box( esc_html__( 'Search', 'rank-math' ), 's' ); ?>
 	</form>
 

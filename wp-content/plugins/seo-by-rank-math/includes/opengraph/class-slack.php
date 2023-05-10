@@ -219,12 +219,9 @@ class Slack extends OpenGraph {
 	 * @return string
 	 */
 	private function get_product_availability( $product ) {
-		$product_availability = $product->get_availability();
-
-		$availability_text = isset( $product_availability['availability'] ) ? $product_availability['availability'] : '';
-
+		$availability_text = $product->get_availability()['availability'];
 		if ( ! $availability_text ) {
-			return __( 'In stock', 'rank-math' );
+			$availability_text = __( 'In stock', 'rank-math' );
 		}
 
 		return $availability_text;

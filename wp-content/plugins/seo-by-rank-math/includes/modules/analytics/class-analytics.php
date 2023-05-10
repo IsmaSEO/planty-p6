@@ -304,7 +304,6 @@ class Analytics extends Base {
 			'rank-math-analytics',
 			$uri . '/assets/js/stats.js',
 			[
-				'lodash',
 				'wp-components',
 				'wp-element',
 				'wp-i18n',
